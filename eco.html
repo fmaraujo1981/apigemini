@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Economia de Energia</title>
+</head>
+<body>
+    <h1>Economia de Energia</h1>
+    <form id="energy-form">
+        <label for="residents">Número de moradores:</label><br>
+        <input type="number" id="residents" name="residents"><br><br>
+
+        <label for="region">Região do Brasil:</label><br>
+        <select id="region" name="region">
+            <option value="norte">Norte</option>
+            <option value="nordeste">Nordeste</option>
+            <option value="centro-oeste">Centro-Oeste</option>
+            <option value="sudeste">Sudeste</option>
+            <option value="sul">Sul</option>
+        </select><br><br>
+
+        <label for="appliances">Eletrodomésticos (separados por vírgula):</label><br>
+        <input type="text" id="appliances" name="appliances"><br><br>
+
+        <button type="submit">Obter Dicas</button>
+    </form>
+    <div id="result"></div>
+    <script src="script.js"></script>
+</body>
+</html>
